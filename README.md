@@ -1,12 +1,12 @@
 # task-01-manahilkhan
 as a inturn in decodelabs this is my first task done dataset cleaning
-Project 1 — Data Cleaning & Preparation
+Project 1 Data Cleaning & Preparation
 
 DecodeLabs Industrial Training Kit | Batch 2026
 
 Overview
 
-This project is the foundation phase of the DecodeLabs Data Analytics track. The goal is to take a raw, messy e-commerce orders dataset and transform it into a clean, reliable, analysis-ready source of truth — without using any "fancy" charts or models. Just pure data integrity work.
+This project is the foundation phase of the DecodeLabs Data Analytics track. The goal is to take a raw, messy e-commerce orders dataset and transform it into a clean, reliable, analysis-ready source of truth without using any "fancy" charts or models. Just pure data integrity work.
 
 
 Objective
@@ -23,25 +23,25 @@ Dataset
 
 File: Dataset_for_Data_Analytics.xlsx
 Rows: 1,200
-Columns: 14 — OrderID, CustomerID, Date, Product, Quantity, UnitPrice, TotalPrice, PaymentMethod, OrderStatus, ReferralSource, ShippingAddress, CouponCode, TrackingNumber
+Columns: 14 OrderID, CustomerID, Date, Product, Quantity, UnitPrice, TotalPrice, PaymentMethod, OrderStatus, ReferralSource, ShippingAddress, CouponCode, TrackingNumber
 
 Methodology
 
 The cleaning process follows the three phases defined by DecodeLabs:
 
-Phase 1 — Strategic Imputation
+Phase 1 Strategic Imputation
 
 Handle the gaps. Don't just delete.
 
 The CouponCode column had 309 missing values (25.8% of rows). Rather than deleting these rows (which would reduce statistical power), missing values were filled with "No Coupon" — a domain-logic imputation, since a blank coupon code simply means no coupon was applied to that order.
 
-Phase 2 — The Integrity Audit
+Phase 2 The Integrity Audit
 
 One truth, one record.
 
 Checked for duplicate rows and duplicate OrderID values to ensure no transaction was counted more than once. Result: 0 duplicate rows and 0 duplicate OrderIDs found — the dataset passed this check with no removal needed.
 
-Phase 3 — Speak One Language
+Phase 3 Speak One Language
 
 Standardize formats across the dataset.
 
